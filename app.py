@@ -6,7 +6,7 @@ from datetime import datetime
 
 # 1. HCI & Cognitive Neuroscience (Visual design for low cognitive load)
 st.set_page_config(page_title="NEURO-STRAT AI", layout="wide")
-st.markdown("<style>div.block-container{padding-top:1rem;}</style>", unsafe_allow_index=True)
+st.markdown("<style>div.block-container{padding-top:1rem;}</style>", unsafe_allow_html=True)
 
 st.title("🧠 NEURO-STRAT: Iran-West Conflict Risk Engine")
 st.sidebar.title("Analyst Insights")
