@@ -52,9 +52,20 @@ while True:
             fig.update_layout(template="plotly_dark", title=f"Real-Time Sentiment Analysis (Last Updated: {time.strftime('%H:%M:%S')})")
             st.plotly_chart(fig, use_container_width=True)
             
-            st.info("HCI Note: Dashboard updates every 60 seconds to provide real-time strategic clarity.")
-        else:
-            st.error("Waiting for market data...")
+         st.info("HCI Note: Dashboard updates every 60 seconds to provide real-time strategic clarity.")
 
-    # Tunggu 60 saat sebelum buat pusingan seterusnya
+        # --- FOOTER SIGNATURE (Mesti ada 2 kali jarak 'Tab' supaya masuk dalam 'with' block) ---
+        st.markdown("---")
+        st.markdown(
+            """
+            <div style='text-align: center; color: grey;'>
+                <p><strong>NEURO-STRAT Engine v1.0</strong></p>
+                <p>Developed & Conceptualized by <strong>Mohd Khairul Ridhuan</strong></p>
+                <p>© 2026 | Geopolitical Strategist & Neuro-Analyst</p>
+            </div>
+            """, 
+            unsafe_allow_html=True
+        )
+
+    # --- SLEEP (Mesti ada 1 kali jarak 'Tab' supaya masuk dalam 'while' loop) ---
     time.sleep(60)
